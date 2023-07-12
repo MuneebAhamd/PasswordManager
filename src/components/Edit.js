@@ -95,10 +95,10 @@ function Edit() {
     }, [counter])
 
     return (
-        <div style={{margin: '25px'}}>
+        <div style={{margin: '25px',justifyContent:'center',alignSelf:'center' }}>
             <h1> Edit Password</h1>
             <div className="input-group mb-3" style={{width: '50%'}}>
-                <div className="input-group-prepend">
+                <div className="input-group-prepend" style={{justifyContent:'center',alignSelf:'center',display:'flex'}}>
                     <label className="input-group-text" for="inputGroupSelect01">Options</label>
                 </div>
                 <select className="custom-select" id="inputGroupSelect01" onChange={e=> setSelect(e.target.value)}>

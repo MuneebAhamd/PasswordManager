@@ -33,11 +33,11 @@ function View() {
 
     return (
         
-        <div className="justify-content-center">
+        <div className="justify-content-center" style={{display:'flex',justifyContent:'center',}}>
             {console.log(userUID)}
-            <h1> View Password</h1>
+            <h1 style={{marginRight:'-25%'}}> View Password</h1>
             <br></br>
-            <div style={{width: '40%' , justifyContent: 'center' , alignItems: 'center'}} >
+            <div style={{width: '40%' , justifyContent: 'center' , alignItems: 'center',marginTop:'5%'}} >
             <Table striped bordered hover>
                 <thead>
                     <tr>

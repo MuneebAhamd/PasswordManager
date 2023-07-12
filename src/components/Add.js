@@ -61,22 +61,22 @@ function Add() {
     
 
     return (
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'center',marginTop:'10%', minHeight: '100vh' }}>
 
             {message.type? <h4>{message.text}</h4> : null}
-            <h1 style={{textAlign: 'center'}}> Add Password</h1>
+            <h1 style={{textAlign: 'center',marginTop:'-4%',marginRight:'-18%'}}> Add Password</h1>
             <div style={{width: '50%' , marginLeft: '25px'}} > 
             <Form>
                 
                 <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)}/>
+                <Form.Control type="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} style={{ width: '40%' }}/>
 
                  </Form.Group>
 
                  <Form.Group controlId="formBasicPassword">
                  <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={password} onChange={e=> setPassword(e.target.value)}/>
+                <Form.Control type="password" placeholder="Password" value={password} onChange={e=> setPassword(e.target.value)} style={{ width: '40%' }}/>
                  </Form.Group>
                  <Button variant="primary" type="submit" onClick={(e)=> AddData(e)}>
                  Submit

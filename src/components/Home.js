@@ -14,12 +14,11 @@ function Home() {
                 The main <strong>OBJECTIVE</strong> of the website is to let people store all
                 their password at one place so they dont have to reset it again and again.
 
-                You can fork me on GitHub if you want  https://www.github.com/aman-singal
+                You can fork me on GitHub if you want  https://github.com/MuneebAhamd/PasswordManager.git
                 </p>
             <h3 style={{marginTop: '30px'}}>For Me!!!</h3>
-            <p style={{marginTop: '15px'}}>I created this website when the whole world was down with Covid-19 and most of the 
-                countries have issued lockdown. Today's date is 10-April-2020.
-                God I know I am really gonna miss it. When I will look this date after sometime.
+            <p style={{marginTop: '15px'}}>"Our password manager simplifies your online experience by providing a seamless sign-in process, allowing you to securely access and manage your credentials with features like login, add, view, edit, and sign out."
+"Experience hassle-free password management with our user-friendly password manager, enabling you to effortlessly sign in and utilize essential functionalities such as login, add, view, edit, and sign out for seamless control over your digital accounts.".
                 {/* Today I flew Kite with my father */}
             </p>
         </div>

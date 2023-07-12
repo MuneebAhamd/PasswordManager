@@ -23,10 +23,10 @@ function Login() {
     }
 
     return (
-     <div style={{ justifyContent: 'center',marginTop:'10%', alignSelf: 'center' }}>
+ <div style={{ justifyContent: 'center', marginTop: '10%', alignSelf: 'center' }}>
   <h1 style={{ textAlign: 'center' }}>Login Page</h1>
-  {message ? <h4>{message}</h4> : null}
-  <div style={{ display: 'flex', justifyContent: 'center' ,marginLeft:'25%'}}>
+  {message ? <h4 style={{ textAlign: 'center' }}>{message}</h4> : null}
+  <div style={{ display: 'flex', justifyContent: 'center', marginLeft: '25%' }}>
     <Form style={{ margin: '25px', width: '50%' }}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -39,12 +39,11 @@ function Login() {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} style={{ width: "39%" }} />
       </Form.Group>
-      {/* <div style={{ display: 'flex', justifyContent: 'center' }}> */}
-        <Button variant="primary" type="submit" onClick={e => userLogin(e)}> Login</Button>
-      {/* </div> */}
+      <Button variant="primary" type="submit" onClick={e => userLogin(e)}>Login</Button>
     </Form>
   </div>
 </div>
+
 
     )
 }
