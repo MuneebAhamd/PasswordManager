@@ -8,7 +8,7 @@ function UserSignout() {
         fire.auth().signOut();
         console.log('Job Done But Still Problem')
         history.push('/')
-    }, [])
+    }, [history])
     return (
         <div>
             <h1>SignOut SuccessFull</h1>

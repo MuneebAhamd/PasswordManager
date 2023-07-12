@@ -92,7 +92,7 @@ function Edit() {
 
         
 
-    }, [counter])
+    }, [counter, userUID]);
 
     return (
         <div style={{margin: '25px',justifyContent:'center',alignSelf:'center' }}>

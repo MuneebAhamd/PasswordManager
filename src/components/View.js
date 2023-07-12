@@ -13,7 +13,7 @@ function View() {
     useEffect(()=>{
         
         if(userUID){
-            const unsuscribe = firebase.firestore().collection(userUID).onSnapshot(snap => {
+            firebase.firestore().collection(userUID).onSnapshot(snap => {
                 const prime = snap.docs.map(item=>({
                     id: item.id,
                     email: item.data().email,
@@ -26,10 +26,7 @@ function View() {
 
             setCounter(counter+ 1)
         }
-
-
-
-    }, [counter])
+    }, [counter, userUID]);
 
     return (
         

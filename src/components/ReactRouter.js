@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
   } from "react-router-dom";
 import Home from './Home'
 import View from './View'
@@ -11,7 +10,6 @@ import Edit from './Edit'
 import Add from './Add'
 import Nomatch from './Nomatch'
 import Signout from './UserSignout'
-import {UserContext} from './UserContext'
 
 
 function ReactRouter() {

@@ -1,5 +1,5 @@
 import React, { useState, useReducer  , useContext} from 'react'
-import {Button, Form, Alert  } from 'react-bootstrap'
+import {Button, Form  } from 'react-bootstrap'
 import firebase from 'firebase'
 import {UserContext} from './UserContext'
 
@@ -16,23 +16,28 @@ function Add() {
 
     
 
-    const reducer =(state,action)=>{
+    const reducer = (state, action) => {
+  switch (action) {
+    case 'success':
+      return {
+        text: "Added Successfully",
+        type: 'success'
+      };
+    case 'null_password':
+      return {
+        text: "Password cannot be empty",
+        type: 'danger'
+      };
+    case 'null_email':
+      return {
+        text: "Email cannot be empty",
+        type: 'danger'
+      };
+    default:
+      return state;
+  }
+};
 
-        switch(action){
-            case 'success':
-                return {text: "Added Successfully",
-                        type: 'success'}
-            case 'null_password':
-                return {text: "Password cann't be empty",
-                        type: 'danger'}
-            case 'null_email':
-                return {text: "Email cann't be empty",
-                        type: 'danger'}
-
-                }
-            
-        }
-    
 
     const[message , dispatch] = useReducer(reducer,initMessage)
 
